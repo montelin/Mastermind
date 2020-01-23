@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.6" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <items>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+         <content>
+            <VBox fx:id="previousGuessPanel" prefHeight="600.0" prefWidth="145.0" spacing="5.0" style="-fx-background-color: #A3A3A3;">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Text depthTest="DISABLE" fill="WHITE" stroke="#ef6f00" strokeType="OUTSIDE" strokeWidth="0.0" text="MasterMind" textAlignment="CENTER" wrappingWidth="214.0">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     
+                                 </font>
+                     <effect>
+                        <InnerShadow height="0.0" radius="0.0" width="0.0" />
+                     </effect>
+                  </Text>
+                  <Separator prefHeight="10.0" prefWidth="221.0" style="-fx-border-color: #000000;" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <VBox focusTraversable="true" prefHeight="507.0" prefWidth="156.0" style="-fx-background-color: #9EEAFF;">
+         <children>
+            <FlowPane fx:id="pinPanel" alignment="CENTER" columnHalignment="CENTER" hgap="5.0" prefHeight="2.0" prefWidth="156.0" style="-fx-background-color: #F4C95D;" vgap="5.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </FlowPane>
+            <Separator prefWidth="200.0" />
+            <FlowPane fx:id="currentGuessPanel" alignment="CENTER" hgap="5.0" minHeight="30.0" prefHeight="30.0" prefWidth="139.0" style="-fx-background-color: #ffffff;" vgap="5.0">
+              
+                <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <effect>
+                  <InnerShadow height="9.14" radius="4.07" width="9.14" />
+               </effect>
+            </FlowPane>
+            <Separator prefWidth="200.0" />
+            <VBox alignment="TOP_CENTER" focusTraversable="true" prefHeight="556.0" prefWidth="156.0" spacing="5.0" style="-fx-background-color: #DD7230;">
+               <children>
+                  
+                        <Button fx:id="submitButton" contentDisplay="CENTER" mnemonicParsing="false" style="-fx-background-color: #E7E393; -fx-border-color: #000000;" text="Bekräfta Gissning">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></Button>
+                  <Button fx:id="clearButton" contentDisplay="CENTER" mnemonicParsing="false" style="-fx-background-color: #D62828; -fx-border-color: #000000;" text="Rensa Gissningar" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></Button>
+                  <Separator prefWidth="200.0" />
+                  
+      
+                     </children>
+              
+                     <padding>
+                  <Insets bottom="5.0" left="5.0" right="12.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </items>
+</SplitPane>
